@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Mapper.buyer_infoMapper">
+    <select id="getAllBuyer" resultType="com.example.demo.pojo.Buyer_info">
+        select * from buyer_info;
+    </select>
+    <select id="getNameById" parameterType="int" resultType="String">
+        select buyer_name from buyer_info where buyer_id=#{buyer_id};
+    </select>
+</mapper>

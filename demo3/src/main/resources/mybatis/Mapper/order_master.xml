@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Mapper.order_masterMapper">
+    <insert id="setOrder" parameterType="com.example.demo.pojo.Order_master">
+        insert into order_master (order_id,buyer_id,buyer_name,buyer_address) value (#{order_id},#{buyer_id},#{buyer_name},#{buyer_address});
+    </insert>
+</mapper>
